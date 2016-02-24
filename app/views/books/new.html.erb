@@ -1,0 +1,24 @@
+<div class='header'>
+  <img class='theimage' src="<%= asset_path( 'NovelFormation.jpg') %>" />
+
+  <h1 class='title'>A Novel Formation</h1>
+      <% if flash[:notice] %>
+        <div class="notice"><%= flash[:notice] %></div>
+      <% end %>
+</div>
+
+<div class="create">
+  <div class="container">
+    
+    <%= form_for(@book) do |f| %>
+      <div class='field'>
+        <%= f.text_area :title %><br>
+        <%= f.text_area :description %>
+      </div>
+      <div class='actions'>
+        <%= f.submit "Create" %>
+      </div>
+    <% end %>
+    
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<div class='header'>
+  <img class='theimage' src="<%= asset_path( 'NovelFormation.jpg') %>" />
+
+  <h1 class='title'>A Novel Formation</h1>
+</div>
+
+<div class="tag">
+  <div class="container">
+    <h2><%= @author.name %></h2>
+
+    <div>
+      <% @books.each do |d| %>
+      <div class="rows">
+        <h2><%= d.title %></h2>
+        <p><%= d.description %></p>
+        <%=  link_to 'Learn More', controller: 'books', action: 'show', id: d.id %>
+      </div>
+      <% end %>
+      <div class='newupdatedelete'>
+        <%= link_to "New Book", controller: 'books', action: 'new', id: @author %>
+        <%= link_to 'Update Author', controller: 'authors', action: 'old', id: @author %>
+        <%= button_to "Delete Author", @author, :method => :delete %>
+      </div>
+    </div>
+
+
+  </div>
+</div>

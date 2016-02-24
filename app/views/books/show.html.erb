@@ -1,0 +1,10 @@
+<div class='header'>
+  <h1 class='title'>A Novel Formation</h1>
+</div>
+<div class="rows">
+  <div class="container">
+    <h2><%= @book.title%></h2>
+    <%= @book.description %>
+    <%= button_to "delete", @book, :method => :delete %>
+  </div>
+</div>

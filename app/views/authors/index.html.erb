@@ -1,0 +1,23 @@
+<head>
+</head>
+<body>
+  <div class='header'>
+  <img class='theimage' src="<%= asset_path( 'NovelFormation.jpg') %>" />
+
+  <h1 class='title'>A Novel Formation</h1>
+</div>
+  <div class="container">
+      <% @authors.each do |t| %>
+        <div class='rows'>
+          <h2><%= t.name %></h2>
+            <%= t.biography %>
+          <div class='linky'>
+            <%= link_to "Learn more", author_path(t) %>
+          </div>
+        </div>
+      <% end %>
+  </div>
+  <div class='new'>
+      <%= link_to "New Author", '/author/new' %>
+  </div>
+</body>

@@ -1,0 +1,73 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body{
+	font:inherit;
+	font-family:meta-normal
+}
+.header{
+	padding: 30px;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+	border-width: .5px;
+}
+.title{
+	margin:auto;
+	width:99%;
+}
+.rows{
+	width:auto;
+	text-align: center;
+	border-left-style: solid;
+	border-left-color: #d04237;
+	border-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: gray;
+}
+
+.linky{
+	width: 100px;
+	height: 25px;
+	float:right;
+	background-color: #d04237;
+
+}
+.new{
+	font-size: 40px;
+	width: 200px;
+	height: 50px;
+	background-color: #d04237;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+.newupdatedelete{
+	font-size: 40px;
+	width: 600px;
+	height: 50px;
+	background-color: #d04237;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+textarea{
+	width:200px;
+	height:200px;
+}
+.theimage{
+	float:left;
+	width:60px;
+	height:60px;
+}
